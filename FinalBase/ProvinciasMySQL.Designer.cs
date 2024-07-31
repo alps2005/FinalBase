@@ -1,6 +1,6 @@
 ﻿namespace FinalBase
 {
-    partial class Cantones
+    partial class ProvinciasMySQL
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(566, 54);
+            this.button1.Location = new System.Drawing.Point(606, 52);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(628, 124);
+            this.button2.Location = new System.Drawing.Point(606, 101);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(628, 185);
+            this.button3.Location = new System.Drawing.Point(606, 148);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(628, 253);
+            this.button4.Location = new System.Drawing.Point(606, 209);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -77,9 +77,9 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(628, 350);
+            this.btn_salir.Location = new System.Drawing.Point(606, 359);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(93, 35);
+            this.btn_salir.Size = new System.Drawing.Size(93, 27);
             this.btn_salir.TabIndex = 4;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -87,30 +87,30 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 223);
+            this.dataGridView1.Location = new System.Drawing.Point(60, 246);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(467, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(437, 150);
             this.dataGridView1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(91, 90);
+            this.label1.Location = new System.Drawing.Point(100, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Canton";
+            this.label1.Text = "Parroquia";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(201, 90);
+            this.textBox1.Location = new System.Drawing.Point(239, 45);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 26);
+            this.textBox1.Size = new System.Drawing.Size(258, 26);
             this.textBox1.TabIndex = 7;
             // 
-            // Cantones
+            // Parroquias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +123,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Cantones";
-            this.Text = "Cantones";
+            this.Name = "Parroquias";
+            this.Text = "Parroquias";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

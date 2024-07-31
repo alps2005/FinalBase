@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalBase
 {
-    public partial class Cantones : Form
+    public partial class CantonesMySQL : Form
     {
-        public Cantones()
+        public CantonesMySQL()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace FinalBase
 {
-    partial class Parroquias
+    partial class ParroquiasMySQL
     {
         /// <summary>
         /// Required designer variable.

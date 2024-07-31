@@ -122,10 +122,5 @@ namespace FinalBase
             UpdatePostgres postgres = new UpdatePostgres();
             postgres.Show();
         }
-
-        private void txt_provincias_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

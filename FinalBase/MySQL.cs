@@ -19,7 +19,7 @@ namespace FinalBase
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Provincias provincias = new Provincias();   
+            ProvinciasMySQL provincias = new ProvinciasMySQL();   
             provincias.Show();
         }
 
@@ -30,13 +30,13 @@ namespace FinalBase
 
         private void btn_parroquias_Click(object sender, EventArgs e)
         {
-            Parroquias parroquias = new Parroquias();
+            ParroquiasMySQL parroquias = new ParroquiasMySQL();
             parroquias.Show();
         }
 
         private void btn_cantones_Click(object sender, EventArgs e)
         {
-            Cantones cantones = new Cantones(); 
+            CantonesMySQL cantones = new CantonesMySQL(); 
             cantones.Show();
         }
     }

@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace FinalBase
 {
-    public partial class Provincias : Form
+    public partial class ProvinciasMySQL : Form
     {
         public int provinciaID { get; set; }
         public string nombre { get; set; }
 
-        public Provincias()
+        public ProvinciasMySQL()
         {
             InitializeComponent();
         }

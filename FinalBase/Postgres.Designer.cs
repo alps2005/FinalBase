@@ -47,7 +47,6 @@
             this.txt_provincias.Name = "txt_provincias";
             this.txt_provincias.Size = new System.Drawing.Size(200, 20);
             this.txt_provincias.TabIndex = 0;
-            this.txt_provincias.TextChanged += new System.EventHandler(this.txt_provincias_TextChanged);
             // 
             // txt_cantones
             // 
@@ -66,81 +65,89 @@
             // labelProvincias
             // 
             this.labelProvincias.AutoSize = true;
-            this.labelProvincias.Location = new System.Drawing.Point(12, 15);
+            this.labelProvincias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelProvincias.Location = new System.Drawing.Point(38, 12);
             this.labelProvincias.Name = "labelProvincias";
-            this.labelProvincias.Size = new System.Drawing.Size(59, 13);
+            this.labelProvincias.Size = new System.Drawing.Size(76, 20);
             this.labelProvincias.TabIndex = 6;
-            this.labelProvincias.Text = "Provincias:";
+            this.labelProvincias.Text = "Provincia:";
             // 
             // labelCantones
             // 
             this.labelCantones.AutoSize = true;
-            this.labelCantones.Location = new System.Drawing.Point(12, 67);
+            this.labelCantones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelCantones.Location = new System.Drawing.Point(49, 64);
             this.labelCantones.Name = "labelCantones";
-            this.labelCantones.Size = new System.Drawing.Size(55, 13);
+            this.labelCantones.Size = new System.Drawing.Size(65, 20);
             this.labelCantones.TabIndex = 8;
-            this.labelCantones.Text = "Cantones:";
+            this.labelCantones.Text = "Canton:";
             // 
             // labelParroquias
             // 
             this.labelParroquias.AutoSize = true;
-            this.labelParroquias.Location = new System.Drawing.Point(12, 119);
+            this.labelParroquias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelParroquias.Location = new System.Drawing.Point(33, 116);
             this.labelParroquias.Name = "labelParroquias";
-            this.labelParroquias.Size = new System.Drawing.Size(60, 13);
+            this.labelParroquias.Size = new System.Drawing.Size(81, 20);
             this.labelParroquias.TabIndex = 10;
-            this.labelParroquias.Text = "Parroquias:";
+            this.labelParroquias.Text = "Parroquia:";
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.GreenYellow;
             this.button1.Location = new System.Drawing.Point(24, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
             this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(117, 182);
+            this.button2.BackColor = System.Drawing.Color.Tomato;
+            this.button2.Location = new System.Drawing.Point(116, 182);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 13;
             this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Gold;
             this.button3.Location = new System.Drawing.Point(204, 182);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 14;
             this.button3.Text = "Buscar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Aqua;
             this.button4.Location = new System.Drawing.Point(296, 182);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 15;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Text = "Actualizar";
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button5.Location = new System.Drawing.Point(393, 182);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 16;
             this.button5.Text = "Cerrar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Form3
+            // Postgres
             // 
             this.ClientSize = new System.Drawing.Size(504, 217);
             this.Controls.Add(this.button5);
@@ -154,7 +161,7 @@
             this.Controls.Add(this.txt_parroquias);
             this.Controls.Add(this.txt_cantones);
             this.Controls.Add(this.txt_provincias);
-            this.Name = "Form3";
+            this.Name = "Postgres";
             this.ResumeLayout(false);
             this.PerformLayout();
 

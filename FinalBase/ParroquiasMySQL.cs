@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalBase
 {
-    public partial class Parroquias : Form
+    public partial class ParroquiasMySQL : Form
     {
-        public Parroquias()
+        public ParroquiasMySQL()
         {
             InitializeComponent();
         }

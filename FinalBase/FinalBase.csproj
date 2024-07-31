@@ -125,11 +125,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cantones.cs">
+    <Compile Include="CantonesMySQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cantones.Designer.cs">
-      <DependentUpon>Cantones.cs</DependentUpon>
+    <Compile Include="CantonesMySQL.Designer.cs">
+      <DependentUpon>CantonesMySQL.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="DeletePostgres.cs">
@@ -137,6 +137,12 @@
     </Compile>
     <Compile Include="DeletePostgres.Designer.cs">
       <DependentUpon>DeletePostgres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID_SearchPostgres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID_SearchPostgres.Designer.cs">
+      <DependentUpon>ID_SearchPostgres.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -150,11 +156,11 @@
     <Compile Include="MySQL.Designer.cs">
       <DependentUpon>MySQL.cs</DependentUpon>
     </Compile>
-    <Compile Include="Parroquias.cs">
+    <Compile Include="ParroquiasMySQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Parroquias.Designer.cs">
-      <DependentUpon>Parroquias.cs</DependentUpon>
+    <Compile Include="ParroquiasMySQL.Designer.cs">
+      <DependentUpon>ParroquiasMySQL.cs</DependentUpon>
     </Compile>
     <Compile Include="Postgres.cs">
       <SubType>Form</SubType>
@@ -164,11 +170,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provincias.cs">
+    <Compile Include="ProvinciasMySQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Provincias.Designer.cs">
-      <DependentUpon>Provincias.cs</DependentUpon>
+    <Compile Include="ProvinciasMySQL.Designer.cs">
+      <DependentUpon>ProvinciasMySQL.cs</DependentUpon>
     </Compile>
     <Compile Include="ReadPostgres.cs">
       <SubType>Form</SubType>
@@ -182,11 +188,14 @@
     <Compile Include="UpdatePostgres.Designer.cs">
       <DependentUpon>UpdatePostgres.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cantones.resx">
-      <DependentUpon>Cantones.cs</DependentUpon>
+    <EmbeddedResource Include="CantonesMySQL.resx">
+      <DependentUpon>CantonesMySQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeletePostgres.resx">
       <DependentUpon>DeletePostgres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID_SearchPostgres.resx">
+      <DependentUpon>ID_SearchPostgres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -194,8 +203,11 @@
     <EmbeddedResource Include="MySQL.resx">
       <DependentUpon>MySQL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parroquias.resx">
-      <DependentUpon>Parroquias.cs</DependentUpon>
+    <EmbeddedResource Include="ParroquiasMySQL.resx">
+      <DependentUpon>ParroquiasMySQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postgres.resx">
+      <DependentUpon>Postgres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -206,8 +218,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Provincias.resx">
-      <DependentUpon>Provincias.cs</DependentUpon>
+    <EmbeddedResource Include="ProvinciasMySQL.resx">
+      <DependentUpon>ProvinciasMySQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReadPostgres.resx">
       <DependentUpon>ReadPostgres.cs</DependentUpon>

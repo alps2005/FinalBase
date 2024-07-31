@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace FinalBase
 {
-    public partial class ReadPostgres : Form
+    public partial class ID_SearchPostgres : Form
     {
         private NpgsqlConnection connection;
         private NpgsqlCommand command;
-        public ReadPostgres()
+
+        public ID_SearchPostgres()
         {
             InitializeComponent();
             InitializeDatabaseConnection();
@@ -30,34 +31,31 @@ namespace FinalBase
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM show_all()";
-            FetchData(query);
+            if (ValidateInputs())
+            {
+                FetchDataById();
+            }
+            else
+            {
+                MessageBox.Show("ID field must be filled out.");
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private bool ValidateInputs()
         {
-            string query = "SELECT * FROM show_provincia_canton()";
-            FetchData(query);
+            return !string.IsNullOrWhiteSpace(txt_id.Text);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string query = "SELECT * FROM show_provincia_parroquia()";
-            FetchData(query);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            string query = "SELECT * FROM show_canton_parroquia()";
-            FetchData(query);
-        }
-
-        private void FetchData(string query)
+        private void FetchDataById()
         {
             try
             {
+                string query = "SELECT * FROM get_data_by_id(@id)";
+
                 using (var command = new NpgsqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("id", int.Parse(txt_id.Text));
+
                     using (var reader = command.ExecuteReader())
                     {
                         var dataTable = new DataTable();
@@ -71,16 +69,9 @@ namespace FinalBase
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            ID_SearchPostgres postgres = new ID_SearchPostgres();
-            postgres.Show();
         }
     }
 }

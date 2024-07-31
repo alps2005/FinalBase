@@ -34,6 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button1.Location = new System.Drawing.Point(25, 341);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 47);
+            this.button1.Size = new System.Drawing.Size(110, 47);
             this.button1.TabIndex = 0;
             this.button1.Text = "Mostrar todo";
             this.button1.UseVisualStyleBackColor = false;
@@ -51,9 +52,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.SkyBlue;
-            this.button2.Location = new System.Drawing.Point(170, 341);
+            this.button2.Location = new System.Drawing.Point(141, 341);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 47);
+            this.button2.Size = new System.Drawing.Size(123, 47);
             this.button2.TabIndex = 1;
             this.button2.Text = "Mostrar Provincias-Cantones";
             this.button2.UseVisualStyleBackColor = false;
@@ -70,9 +71,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button3.Location = new System.Drawing.Point(328, 341);
+            this.button3.Location = new System.Drawing.Point(270, 341);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 47);
+            this.button3.Size = new System.Drawing.Size(125, 47);
             this.button3.TabIndex = 3;
             this.button3.Text = "Mostrar Provincias-Parroquias";
             this.button3.UseVisualStyleBackColor = false;
@@ -92,19 +93,31 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.SteelBlue;
-            this.button5.Location = new System.Drawing.Point(487, 341);
+            this.button5.Location = new System.Drawing.Point(401, 341);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(134, 47);
+            this.button5.Size = new System.Drawing.Size(123, 47);
             this.button5.TabIndex = 5;
             this.button5.Text = "Mostrar Cantones-Parroquias";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button6.Location = new System.Drawing.Point(530, 341);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(91, 47);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Busqueda por id";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // ReadPostgres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -126,5 +139,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
