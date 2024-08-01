@@ -30,7 +30,8 @@ namespace FinalBase
 
         private void sQLserverToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ServerForms1 serverForms1 = new ServerForms1();
+            serverForms1.Show();
         }
     }
 }
