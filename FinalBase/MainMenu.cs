@@ -24,7 +24,8 @@ namespace FinalBase
 
         private void oraclToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Oracle oracle = new Oracle();   
+            oracle.Show();
         }
 
         private void sQLserverToolStripMenuItem_Click(object sender, EventArgs e)
