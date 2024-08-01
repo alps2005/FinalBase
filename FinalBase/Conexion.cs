@@ -15,7 +15,7 @@ namespace FinalBase
         private string server = "localhost";
         private string database = "proyecto";
         public string user = "root";
-        private string password = "1234";
+        private string password = "12345";
         private string cadenaConexion;
 
         public Conexion()

@@ -37,9 +37,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(45, 158);
+            this.button1.Location = new System.Drawing.Point(30, 103);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 90);
+            this.button1.Size = new System.Drawing.Size(124, 58);
             this.button1.TabIndex = 0;
             this.button1.Text = "Provincias";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // btn_parroquias
             // 
-            this.btn_parroquias.Location = new System.Drawing.Point(288, 158);
+            this.btn_parroquias.Location = new System.Drawing.Point(192, 103);
+            this.btn_parroquias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_parroquias.Name = "btn_parroquias";
-            this.btn_parroquias.Size = new System.Drawing.Size(177, 89);
+            this.btn_parroquias.Size = new System.Drawing.Size(118, 58);
             this.btn_parroquias.TabIndex = 1;
             this.btn_parroquias.Text = "Parroquias";
             this.btn_parroquias.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // btn_cantones
             // 
-            this.btn_cantones.Location = new System.Drawing.Point(547, 158);
+            this.btn_cantones.Location = new System.Drawing.Point(365, 103);
+            this.btn_cantones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cantones.Name = "btn_cantones";
-            this.btn_cantones.Size = new System.Drawing.Size(175, 89);
+            this.btn_cantones.Size = new System.Drawing.Size(117, 58);
             this.btn_cantones.TabIndex = 2;
             this.btn_cantones.Text = "Cantones";
             this.btn_cantones.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(308, 333);
+            this.btn_salir.Location = new System.Drawing.Point(205, 216);
+            this.btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(139, 47);
+            this.btn_salir.Size = new System.Drawing.Size(93, 31);
             this.btn_salir.TabIndex = 3;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -78,22 +82,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(290, 32);
+            this.label1.Location = new System.Drawing.Point(193, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 20);
+            this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Bienvenido a Consultas";
             // 
-            // Form1
+            // MySQL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_cantones);
             this.Controls.Add(this.btn_parroquias);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MySQL";
             this.Text = "MySQL";
             this.ResumeLayout(false);
