@@ -1,12 +1,5 @@
 ﻿using Npgsql;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FinalBase
@@ -39,29 +32,28 @@ namespace FinalBase
             {
                 try
                 {
-                    string connectionString = "Host=localhost;Username=postgres;Password=12345;Database=consultapostgres";
+                    int id = int.Parse(txt_id.Text);
 
-                    using (var conn = new NpgsqlConnection(connectionString))
+                    using (var conn = new NpgsqlConnection("Host=localhost;Username=postgres;Password=12345;Database=consultapostgres"))
                     {
                         conn.Open();
-                        int id = int.Parse(txt_id.Text);
 
                         // Delete from Provincias
-                        using (var cmd = new NpgsqlCommand("SELECT delete_provincia(@id)", conn))
+                        using (var cmd = new NpgsqlCommand("CALL public.delete_provincia(@id)", conn))
                         {
                             cmd.Parameters.AddWithValue("id", id);
                             cmd.ExecuteNonQuery();
                         }
 
                         // Delete from Cantones
-                        using (var cmd = new NpgsqlCommand("SELECT delete_canton(@id)", conn))
+                        using (var cmd = new NpgsqlCommand("CALL public.delete_canton(@id)", conn))
                         {
                             cmd.Parameters.AddWithValue("id", id);
                             cmd.ExecuteNonQuery();
                         }
 
                         // Delete from Parroquias
-                        using (var cmd = new NpgsqlCommand("SELECT delete_parroquia(@id)", conn))
+                        using (var cmd = new NpgsqlCommand("CALL public.delete_parroquia(@id)", conn))
                         {
                             cmd.Parameters.AddWithValue("id", id);
                             cmd.ExecuteNonQuery();
@@ -80,6 +72,7 @@ namespace FinalBase
                 MessageBox.Show("ID field must be filled out.");
             }
         }
+
 
         private bool ValidateInputs()
         {

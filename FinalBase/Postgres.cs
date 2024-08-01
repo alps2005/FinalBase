@@ -1,15 +1,6 @@
 ﻿using System;
 using Npgsql;
-using System.Data;
 using System.Windows.Forms;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FinalBase;
-using System.Xml.Linq;
 
 namespace FinalBase
 {
@@ -48,7 +39,7 @@ namespace FinalBase
                         conn.Open();
 
                         // Insert into Provincias
-                        using (var cmd = new NpgsqlCommand("SELECT insert_provincia(@pro_name)", conn))
+                        using (var cmd = new NpgsqlCommand("CALL insert_provincia(@pro_name)", conn))
                         {
                             cmd.Parameters.AddWithValue("pro_name", txt_provincias.Text);
                             cmd.ExecuteNonQuery();
@@ -62,7 +53,7 @@ namespace FinalBase
                         }
 
                         // Insert into Cantones
-                        using (var cmd = new NpgsqlCommand("SELECT insert_canton(@can_name, @provincia_id)", conn))
+                        using (var cmd = new NpgsqlCommand("CALL insert_canton(@can_name, @provincia_id)", conn))
                         {
                             cmd.Parameters.AddWithValue("can_name", txt_cantones.Text);
                             cmd.Parameters.AddWithValue("provincia_id", provinciaId);
@@ -77,7 +68,7 @@ namespace FinalBase
                         }
 
                         // Insert into Parroquias
-                        using (var cmd = new NpgsqlCommand("SELECT insert_parroquia(@par_name, @canton_id)", conn))
+                        using (var cmd = new NpgsqlCommand("CALL insert_parroquia(@par_name, @canton_id)", conn))
                         {
                             cmd.Parameters.AddWithValue("par_name", txt_parroquias.Text);
                             cmd.Parameters.AddWithValue("canton_id", cantonId);
@@ -85,7 +76,7 @@ namespace FinalBase
                         }
                     }
 
-                    MessageBox.Show("Data inserted successfully!");
+                    MessageBox.Show("Datos insertados exitosamente!");
                 }
                 catch (Exception ex)
                 {
