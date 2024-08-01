@@ -38,12 +38,12 @@ namespace FinalBase
                 }
                 else
                 {
-                    MessageBox.Show("All fields must be filled out.");
+                    MessageBox.Show("Todos los campos deben estar llenos.");
                 }
             }
             else
             {
-                MessageBox.Show("Please enter a valid ID.");
+                MessageBox.Show("Porfavor inserte un ID valido.");
             }
         }
 
@@ -62,7 +62,7 @@ namespace FinalBase
 
                     command.ExecuteNonQuery();
                 }
-                MessageBox.Show("Data updated successfully.");
+                MessageBox.Show("Datos eliminados exitosamente.");
             }
             catch (Exception ex)
             {

@@ -60,7 +60,7 @@ namespace FinalBase
                         }
                     }
 
-                    MessageBox.Show("Data deleted successfully!");
+                    MessageBox.Show("Datos eliminados exitosamente!");
                 }
                 catch (Exception ex)
                 {
@@ -69,7 +69,7 @@ namespace FinalBase
             }
             else
             {
-                MessageBox.Show("ID field must be filled out.");
+                MessageBox.Show("Todos los campos deben estar llenos.");
             }
         }
 

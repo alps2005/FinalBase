@@ -31,7 +31,7 @@ namespace FinalBase
             }
             else
             {
-                MessageBox.Show("ID field must be filled out.");
+                MessageBox.Show("Debe insertar un ID antes de ejecutar.");
             }
         }
 

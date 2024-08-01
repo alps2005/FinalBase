@@ -25,7 +25,7 @@ namespace FinalBase
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error opening connection: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
 
@@ -40,7 +40,7 @@ namespace FinalBase
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error executing procedure: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
 
@@ -56,7 +56,7 @@ namespace FinalBase
                         dataTable.Load(reader);
                         if (dataTable.Rows.Count == 0)
                         {
-                            MessageBox.Show("No data returned.");
+                            MessageBox.Show("Ningun dato retorno.");
                         }
                         dataGridView1.DataSource = dataTable;
                     }
@@ -64,7 +64,7 @@ namespace FinalBase
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error fetching data: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
 

@@ -85,7 +85,7 @@ namespace FinalBase
             }
             else
             {
-                MessageBox.Show("All fields must be filled out.");
+                MessageBox.Show("Todos los campos deben estar llenos.");
             }
         }
 
